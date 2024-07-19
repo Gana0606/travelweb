@@ -9,6 +9,123 @@ export const NAV_LINKF = [
     { href: '/', key: 'journal', label: 'Journal' },
   ];
   
+
+  export const socials = [
+    {
+      id: "0",
+      title: "Discord",
+      iconUrl: 'discrod.svg',
+      url: "#",
+    },
+    {
+      id: "1",
+      title: "Twitter",
+      iconUrl: 'twitter.svg',
+      url: "#",
+    },
+    {
+      id: "2",
+      title: "Instagram",
+      iconUrl: 'instagram.svg',
+      url: "#",
+    },
+    {
+      id: "3",
+      title: "Telegram",
+      iconUrl: 'telegram.svg',
+      url: "#",
+    },
+    {
+      id: "4",
+      title: "Facebook",
+      iconUrl: 'facebook.svg',
+      url: "#",
+    },
+  ];
+
+export const projects = [
+    {
+      title: "Stripe",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Netflix",
+      description:
+        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      link: "https://netflix.com",
+    },
+    {
+      title: "Google",
+      description:
+        "A multinational technology company that specializes in Internet-related services and products.",
+      link: "https://google.com",
+    },
+    {
+      title: "Meta",
+      description:
+        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      link: "https://meta.com",
+    },
+    {
+      title: "Amazon",
+      description:
+        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      link: "https://amazon.com",
+    },
+    {
+      title: "Microsoft",
+      description:
+        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      link: "https://microsoft.com",
+    },
+  ]
+
+export const dummyContent = [
+  {
+    title: "Khövsgöl Lake",
+    description: 
+          `Known as the 'Blue Pearl of Mongolia,' 
+          Khövsgöl Lake is a pristine haven for nature lovers. 
+          Enjoy activities like hiking, horseback riding, 
+          and kayaking, or simply relax by the tranquil waters.`,
+    badge: "Khövsgöl Lake",
+    image:
+      "/1.jpeg",
+  },
+  {
+    title: "Gobi Desert",
+    description: `Experience the vast expanses of the Gobi Desert, 
+          home to the iconic sand dunes, the Flaming Cliffs, 
+          and the elusive snow leopard. 
+          Explore the desert by camel or 4x4, and stay in traditional gers under a canopy of stars.`,
+    badge: "Gobi Desert",
+    image:
+        "/2.jpeg"
+  },
+  {
+    title: "Altai Mountains",
+    description: `Venture into the Altai Mountains, 
+          where ancient petroglyphs and the traditions of Kazakh eagle hunters await. 
+          Trek through rugged terrains and witness the breathtaking views from the highest peaks in Mongolia.`,
+    badge: "Altai Mountains",
+    image:
+        "/3.jpeg"
+  },
+  {
+    title: "Altai Mountains",
+    description: `Venture into the Altai Mountains, 
+          where ancient petroglyphs and the traditions of Kazakh eagle hunters await. 
+          Trek through rugged terrains and witness the breathtaking views from the highest peaks in Mongolia.`,
+    badge: "Altai Mountains",
+    image:
+        "/3.jpeg"
+  },
+  
+];
+
+
   // CAMP SECTION
   export const PEOPLE_URL = [
     '/person-1.png',
