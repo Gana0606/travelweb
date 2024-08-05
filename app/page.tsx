@@ -4,18 +4,26 @@ import Footer from "@/components/Footer";
 import GetApp from "@/components/GetApp";
 import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
-import { Lamp } from "@/components/Sample";
-import { TracingBeamDemo } from "@/components/Sample2";
+import { FlipWordsDemo } from "@/components/Hero1";
+import { CardsCarousel } from "@/components/Sample";
+import { TracingBeamDemo } from "@/components/Hero2";
 import { LayoutGridDemo } from "@/components/Sample3";
+import FloatingNavDemo  from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
+
 
 export default function Home() {
   return (
     <>
-      <Lamp />
+      {/* <Navbar/> */}
+      <FloatingNavDemo/>
+      <FlipWordsDemo/>
+      <CardsCarousel />
+      {/* <Lamp /> */}
       {/* <Hero/> */}
+      <LayoutGridDemo />
       <TracingBeamDemo/>
       {/* <Camp/> */}
-      <LayoutGridDemo />
       {/* <Guide/> */}
       {/* <Features/> */}
       {/* <GetApp/> */}

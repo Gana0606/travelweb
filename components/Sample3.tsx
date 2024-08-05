@@ -4,13 +4,8 @@ import { LayoutGrid } from "./ui/LayoutGrid";
 
 export function LayoutGridDemo() {
   return (
-    <div className="flexCenter flex-col bg-slate-950">
-      <div className="flex justify-center">
-        <h2 className="bold-40 lg:bold-64 text-white text-center px-96 pt-14 pb-0">Unveil the mysteries of Mongolia, where every journey tells a story.</h2>
-      </div>
-      <div className="h-screen py-14 w-full">
-        <LayoutGrid cards={cards} />
-      </div>
+    <div className="h-screen py-20 w-full">
+      <LayoutGrid cards={cards} />
     </div>
   );
 }

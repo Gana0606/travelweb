@@ -1,36 +1,76 @@
-import Link from "next/link"
-import Image from "next/image"
-import { NAV_LINKS, NAV_LINKF } from "@/constants"
+// import Link from "next/link";
+// import Image from "next/image";
+// import { NAV_LINKF, NAV_LINKS } from "@/constants";
 
-const Navbar = () => {
+// const Navbar = () => {
+//   return (
+//     <div className="w-full h-56 bg-white py-20">
+//       <nav className="relative container mx-auto flex items-center justify-between">
+//         <div className="flex-grow flex items-center justify-center my-auto">
+//           <ul className="flex space-x-10">
+//             {NAV_LINKF.map((link) => (
+//               <li key={link.key}>
+//                 <Link href={link.href} className="regular-40 text-red-600 cursor-pointer pb-1.5 transition-all hover:text-red-700">
+//                   {link.label}
+//                 </Link>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/3">
+//           <Link href="/">
+//             <Image src="/potens-2.png" alt="logo" width={500} height={500} />
+//           </Link>
+//         </div>
+//         <div className="flex-grow flex items-center justify-center my-auto">
+//           <ul className="flex space-x-10">
+//             {NAV_LINKS.map((link) => (
+//               <li key={link.key}>
+//                 <Link href={link.href} className="regular-40 text-red-600 cursor-pointer pb-1.5 transition-all hover:text-red-700">
+//                   {link.label}
+//                 </Link>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//       </nav>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+
+"use client";
+import React from "react";
+import { FloatingNav } from "./ui/FloatingNavbar";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+
+const FloatingNavDemo = () => {
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "About",
+      link: "/about",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+  ];
   return (
-    <div className="w-full bg-slate-950">
-        <nav className=" flex items-center justify-between
-        mx-auto max-w-[1440px] pt-0 px-30 lg:px-20 3xl:px-0 relative z-30">
-            <ul className="hidden h-full gap-12 lg:flex">
-                {NAV_LINKF.map((link) => (
-                    <Link href={link.href} key={link.key} className="regular-20
-                    text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:text-teal-600">
-                        {link.label}
-                    </Link>
-                ))}
-            </ul>
-
-            <Link href="/">
-                <Image src="/logo.png" alt="logo" width={100} height={100}/>
-            </Link>
-
-            <ul className="hidden h-full gap-12 lg:flex">
-                {NAV_LINKS.map((link) => (
-                    <Link href={link.href} key={link.key} className="regular-20
-                    text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:text-teal-600">
-                        {link.label}
-                    </Link>
-                ))}
-            </ul>
-        </nav>
-    </div> 
-  )
+    <div className="relative  w-full">
+      <FloatingNav navItems={navItems} />
+    </div>
+  );
 }
 
-export default Navbar
+export default FloatingNavDemo;

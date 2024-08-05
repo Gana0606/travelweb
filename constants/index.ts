@@ -1,12 +1,12 @@
 // NAVIGATION
 export const NAV_LINKF = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'collections', label: 'Collections' },
+    { href: '/', key: 'journal', label: 'Journal' },
   ];
 
   export const NAV_LINKS = [
-    { href: '/', key: 'admin ', label: 'Admin ' },
-    { href: '/', key: 'journal', label: 'Journal' },
+    { href: '/', key: 'collections ', label: 'Collections ' },
+    { href: '/', key: 'admin', label: 'Admin' },
   ];
   
 
