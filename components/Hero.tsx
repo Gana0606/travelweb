@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div className="bg-video px-4 ">
       <Navbar/>
-      <div className="absolute top-80 left-40 text-8xl font-normal text-white dark:text-neutral-400">
+      <div className="absolute top-80 left-40 text-6xl font-normal text-white dark:text-neutral-400">
         Explore Mongolia <br />
         Discover 
         <FlipWords words={words} /> 
